@@ -22,3 +22,41 @@ $(function(){
 		
 	})
 })
+
+
+
+//回顶
+/*
+* @Author: PC
+* @Date:   2019-03-12 15:34:46
+* @Last Modified by:   PC
+* @Last Modified time: 2019-03-12 16:11:11
+*/
+
+'use strict';
+
+// <!--start 返回顶部-->
+
+  $(function() {
+    	// 首先让回顶图标隐藏
+        $(".gotop").hide();
+        // bind捆绑方法
+        $(window).bind('scroll',function(){
+        // 顶部滚动卷去的高度
+            if($(window).scrollTop()<=300){
+            // 小于判断高度隐藏
+                $(".gotop").hide();
+           	}else{
+           	// 大于高度显示
+                $(".gotop").show();
+            }
+        });
+        // 点击显示的回顶图标
+        $(".gotop").bind("click",function(){
+        	// 动画回顶，卷去的高度为0；执行时间为300ms;
+        	
+            $('html, body').animate({scrollTop: 0},300);
+        });
+   });
+
+// <!--end 返回顶部-->
