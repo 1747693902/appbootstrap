@@ -1,0 +1,84 @@
+
+.self-transition-ch{
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    z-index: 888;
+    right: 390px;
+    bottom: -280px;
+    width: 100px;
+    border: 1px solid #C2CCD1;
+//  background: red;
+    border-radius: 4px;
+    cursor: pointer;
+    :first-child{
+
+        display: none;  
+       &:hover{
+        padding-top: 15px;
+           
+            color: deepskyblue;
+        }
+    }
+    :last-child{
+        margin-top: 5px;
+        &:hover{
+            text-shadow: 1px 1px 10px #666;
+        }
+    }
+}
+//中间左右图片出现区域
+.self-conter{
+    margin: 0 auto;
+    height: 470px;
+}
+
+//
+@media screen and (max-width: @screen-tablet){
+      .weishi{
+            margin-left: 10px;
+      }
+      
+}
+
+  
+.two_pic{
+    position: relative;
+    left: -400px;
+    margin-top: 20px;
+    width: 400px;
+    height: 450px;
+    background: red;
+//  transition: 1s;
+
+    :first-child{
+        position: absolute;
+        top: 200px;
+        left: 60px;
+        z-index: 10;
+        transform: rotate(-90deg);
+    }
+    :last-child{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 88;
+        
+    }
+    :nth-child(2){
+         position: absolute;
+        top: 28px;
+        left: 60px;
+        
+    }
+}
+.weishi{
+//  margin-left: 200px;
+    >ul>li>img{ 
+        width: 50px;
+        height: 50px;
+    }
+     >ul>li{
+         font-size: 30px;   
+     }
+}

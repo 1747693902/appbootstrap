@@ -13,10 +13,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="css/__main.css">
-        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
-        <script type="text/javascript" src='js/jquery-1.11.1.js'></script>
-        <script src="js/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="../css/__main.css">
+        <!--<link rel="stylesheet" type="text/css" href="../css/self-add.css"/>-->
+        <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+        <script type="text/javascript" src='../js/jquery-1.11.1.js'></script>
+        <script src="../js/modernizr-2.6.2.min.js"></script>
         
         <style>
         	
@@ -37,7 +38,7 @@
 			<div class="con">
 				<!--让图片居中-->
 				<a class="visible-sm" href="#">
-		       		<img src="img/fc.png"  width="190px" height="40px">
+		       		<img src="../img/fc.png"  width="190px" height="40px">
 		    	</a>
 			</div>
 	</div>
@@ -57,7 +58,7 @@
 		<div class="container" >
 			<!--浏览器时的图片-->
 			<a class="navbar-brand hidden-sm hidden-xs" href="#">
-		       <img src="img/fc.png"  width="190px" height="40px">
+		       <img src="../img/fc.png"  width="190px" height="40px">
 		    </a>		  
 		    	<!--小屏幕的时候,背景是灰色的-->
 				<div class="navbar-header backcolor navbar-fixed-top ">
@@ -110,17 +111,16 @@
     <div class="item active">
     	<p class="  p-one">Android<span class="iconfont icon-erweima1"> </span></p>
     	<!--<p>Android<span></span></p>-->
-      <img src="img/bartlesvillecf.jpg" alt="...">   
+      <img src="../img/bartlesvillecf.jpg" alt="...">   
     </div>
     <div class="item">
     	<p class="">Android<span class="iconfont icon-erweima1"> </span></p>
-      <img src="img/bartlesvillecf.jpg" alt="...">    
+      <img src="../img/bartlesvillecf.jpg" alt="...">    
     </div>
     <div class="item">
-      <img src="img/okwu.jpg" alt="...">
+      <img src="../img/okwu.jpg" alt="...">
      
     </div>
-
   </div>
 
   <!-- Controls -->
@@ -135,58 +135,39 @@
 </div>
 </div>
 </main>
-
-
-<div class="container con con-top">
-	<div class="row page-contents">
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/index_ico1.png"/>
-			<p class="pcol">91桌面<br />玩,以我喜欢</p>
-		</div>
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/index_ico11.png"/>
-			<p class="pcol">黄历天<br />气好天气好运气</p>
-		</div>
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/index_ico2_20170315.png"/>
-			<p class="pcol">微视频<br />有趣好玩的视频壁纸社区</p>
+<!--结束-->
+<div class="container-fluid"style="background: pink;">
+	<!--中间左右图片出来部分-->
+	<div class="container self-conter"style="background: gray;">
+		<div class="row">
+			<div class="col-sm-2 hidden-xs" >
+				<div class="self-conter-mover   two_pic">
+					<img src="../img/zm-b1-m2.png"/ class="self-img-one">
+					<img src="../img/zm-b1-m0.png" alt="" />
+					<img src="../img/zm-b1-m1.png"/>
+				</div>
+			</div>
+			<div class="col-sm-2  weishi">
+				<ul class="nav navbar-nav">
+					<li><img src="../img/icon4_v10.png"/><span>微视频桌面</span></li>
+					<li class="self-text-big">微视桌面</li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	
+	
+	
 </div>
 
 
-<div class="container-fluid con-color-gray con">
-	<div class="row page-contents">
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/index_ico3_20160722.png"/>
-			<p class="pcol">91锁屏<br />最简单实用的锁屏软件</p>
-		</div>
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/index_ico12.png"/>
-			<p class="pcol">全局透明壁纸<br />动起来,全局覆盖</p>
-		</div>
-		<div class="col-sm-4 col-xs-12">
-			<img src="img/dxzm_icon2_163x163.png"/>
-			<p class="pcol">微视频<br />有趣好玩的视频壁纸社区</p>
-		</div>
-	</div>
-</div>
 
 
-<!--第三部分-->
-<div class="container con con-top">
-	<div class="row page-contents">
-		<div class="col-sm-6">
-			<img src="img/index_ico10.png"/>
-			<p class="pcol">择学校<br />选学校来择校</p>
-		</div>
-		<div class="col-sm-6">
-			<img src="img/index_ico9.png"/>
-			<p class="pcol">家校大师<br />老师和家长的好帮手</p>
-		</div>
-	</div>
-</div>
-
+   <!--中英转换-->
+		<!--<div class="self-transition-ch">
+			<span>English</span>
+			<p>简体中文</p>
+		</div>-->
 
 <!--尾部-->
 
@@ -223,8 +204,8 @@
 				<a href="#">增值电信业务经营许可证B2-20160145</a>  闽网文许字『2016』5714-104号<br /> 
 				© 2015-2019 福建风灵创景科技有限公司Felink.com 版权所有 闽ICP备15026663号-1 客服热线 13799372083
 			</p>
-	      </div>
-    </div>         
+	     </div>
+    </div>   		    	
 </footer>
 <div class="gotop">
 	<span class="glyphicon glyphicon-chevron-up"></span>
@@ -238,46 +219,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="js/new_file.js"></script>
-
-
-
+<script type="text/javascript" src="../js/new_file.js"></script>
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
-        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery-1.11.1.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
