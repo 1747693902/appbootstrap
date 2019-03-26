@@ -4,7 +4,6 @@
 
 
 // Wrapper and base class
-//
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
@@ -32,11 +31,12 @@
   &:extend(.clearfix all);
 
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
+    float:left;
   }
+  
 }
 
-
+//add
 // Navbar collapse (body)
 //
 // Group your navbar content into this for easy collapsing and expanding across
@@ -192,7 +192,7 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
+  float: left;
   margin-right: @navbar-padding-horizontal;
   padding: 9px 10px;
   .navbar-vertical-align(34px);

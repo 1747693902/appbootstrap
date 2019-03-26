@@ -4,34 +4,174 @@
 
 
 // Wrapper for the slide container and indicators
+@media (max-width:@screen-tablet ){
+    .qq{
+//      position: absolute;
+//      top: 50px;
+    }
+}
+
+
 .carousel {
-  position: relative;
+    position:relative;
+    top:10px; 
+// 
+// left: 0;
 }
 
 .carousel-inner {
-  position: relative;
+  position:relative;
   overflow: hidden;
   width: 100%;
+//z-index: -55;
  
+
 
   > .item {
     display: none;
     position: relative;
     .transition(.6s ease-in-out left);
-     
+     >p{
+        display: inline-block;
+        position: fixed;
+        top: 200px;
+        left: 550px;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #ccc;  
+        margin-left: 50px;
+        
+//      &:extend(.img-absolute);
+        &:hover{
+            text-shadow: 1px 1px 8px #fff;
+        }
+        >span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+           margin-left: 20px;
+            font-size: 30px;
+            color: #fff;
+            &:hover{
+                background: #000;
+            }
+        }
+    }
+  @media (max-width:@screen-lg-desktop ){
+    >p{
+        display: inline-block;
+        position: fixed;
+        top: 200px;
+        left: 550px;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #ccc;  
+//      &:extend(.img-absolute);
+        &:hover{
+            text-shadow: 1px 1px 8px #fff;
+        }
+        >span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+           margin-left: 20px;
+            font-size: 30px;
+            color: #fff;
+            &:hover{
+                background: #000;
+            }
+        }
+    }
+ }
+ @media (max-width:@screen-desktop ){
+        >p{
+        display: inline-block;
+        position: fixed;
+        top: 100px;
+        left: 200px;
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #ccc;  
+//      &:extend(.img-absolute);
+        &:hover{
+            text-shadow: 1px 1px 8px #fff;
+        }
+        >span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+           margin-left: 20px;
+            font-size: 15px;
+            color: #fff;
+            &:hover{
+                background: #000;
+            }
+        }
+      }
+   
+}
+@media (max-width:@screen-tablet ){
+        >p{
+        display: inline-block;
+        position: fixed;
+        top: 60px;
+        left: 150px;
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #ccc;  
+//      &:extend(.img-absolute);
+        &:hover{
+            text-shadow: 1px 1px 8px #fff;
+        }
+        >span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+           margin-left: 20px;
+            font-size: 15px;
+            color: #fff;
+            &:hover{
+                background: #000;
+            }
+        }
+      }
+   
+}
     // Account for jankitude on images
     > img,
     > a > img {
-      &:extend(.img-responsive);
+      &:extend(.img-absolute);
+//    position: absolute;
+//    top:0;
       line-height: 1;
-      min-width:100%;
+      width:100%;
       //add
- @media (min-width: @screen-md-min) {
-    margin-top: -40px;
-  }
-  @media (min-width: @screen-lg-min) {
-    margin-top: -60px;
-  }
+// @media (min-width: @screen-md-min) {
+//  margin-top: -40px;
+//}
+//@media (min-width: @screen-lg-min) {
+//  margin-top: -60px;
+//}
     }
 
     // WebKit CSS3 transforms for supported devices

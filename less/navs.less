@@ -5,6 +5,46 @@
 
 // Base class
 // --------------------------------------------------
+//add
+
+//.mains{
+//  position: absolute;
+//  top:0;
+//  left: 0;
+//}
+
+@media (max-width:@screen-tablet ){
+    .banck-show{
+        position: fixed;
+        top: 50px;
+        z-index: 999;
+//     margin-top: 39px;
+       width: 200px;
+       height: 500px;
+       background: rgba(41,57,72,.8);
+   }
+     .move-ul>li>a{
+         /*text-align: center;*/
+        padding-left:30px ;
+         margin-top: 10px;
+         /*margin-left: 20px;*/
+        color: #a5bfd2;   
+        font-size: 15px;
+    }
+    #show{
+                display: block;
+                position: fixed;
+                left: -200px;
+                
+            }
+}
+
+@media (min-width:@screen-desktop ){
+    #show{
+        display: none;
+        
+    }
+}
 
 .nav {
   margin-bottom: 0;
