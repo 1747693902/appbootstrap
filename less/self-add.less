@@ -1,14 +1,18 @@
 
+//中文英文切换
+.con-color-gray{
+    position: relative;
+}
 .self-transition-ch{
     text-align: center;
     line-height: 25px;
     position: absolute;
     z-index: 888;
-    right: 390px;
-    bottom: -280px;
+    right: 400px;
+    bottom:75px;
     width: 100px;
     border: 1px solid #C2CCD1;
-//  background: red;
+    background: #F1F1F1;
     border-radius: 4px;
     cursor: pointer;
     :first-child{
@@ -32,7 +36,10 @@
     margin: 0 auto;
     height: 470px;
 }
-
+.self-conter-two-color{
+    height: 470px;
+    background: #EBECE9;
+}
 //
 @media screen and (max-width: @screen-tablet){
       .weishi{
@@ -48,7 +55,7 @@
     margin-top: 20px;
     width: 400px;
     height: 450px;
-    background: red;
+//  background: red;
 //  transition: 1s;
 
     :first-child{
@@ -73,12 +80,121 @@
     }
 }
 .weishi{
-//  margin-left: 200px;
+    margin-top: 100px;
+    position: relative;
+    left: 900px;
     >ul>li>img{ 
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
+        margin: 20px;
     }
+     >ul>li>span{
+         font-size: 30px; 
+          margin: 10px 0 0; 
+     }
      >ul>li{
-         font-size: 30px;   
+         font-size: 20px;
+         margin-top: 10px;
      }
 }
+.self-zhuti{
+    margin-top: 100px;
+    position: relative;
+    left: 900px;
+    >ul>li>img{ 
+        width: 55px;
+        height: 55px;
+        margin: 20px;
+    }
+     >ul>li>span{
+         font-size: 30px; 
+          margin: 10px 0 0; 
+     }
+     >ul>li{
+         font-size: 20px;
+         margin-top: 10px;
+     }
+}
+.weishi-two{
+    margin-top: 100px;
+    position: relative;
+    left: -900px;
+    >ul>li>img{ 
+        width: 55px;
+        height: 55px;
+        margin: 20px;
+    }
+     >ul>li>span{
+         font-size: 30px; 
+          margin: 10px 0 0; 
+     }
+     >ul>li{
+         font-size: 20px;
+         margin-top: 10px;
+     }
+}
+//第二左右出现
+.self-there-pic{
+// transform: translate(600px,50px);
+    position: relative;
+    top: 50px;
+    left: 600px;
+    width: 510px;
+    height: 390px;
+    background: url(../img/zm-b2-m0.png)no-repeat center;
+    
+    .self-zm-one{
+        transform: translate(105px,75px);
+//      transition: 4s;
+//     position: relative;
+    }
+     .self-zm-two{
+//      transition: 4s;
+        transform:translate(-135px,77px);
+    }
+     .self-zm-there{
+//      transition: 4s ease-in;
+        transform: translate(105px,-190px) ;
+    }
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+//小滚轮
+//#self-small-pic{
+//  height: 100px;
+//  img{
+//      width: px;
+//      height: 100px;
+//  }
+//}
+.self-lunbo{
+    padding: 0;
+    margin: 0;
+   list-style: none;
+   width: 1000%;
+   overflow: hidden;
+   >li{
+       float: left;
+//     animation: gif_pic 1s 2 alternate ; 
+   }
+}
+.self-gif-pic>img{
+    height: 150px;
+    width: 140px;
+}   
+.self-gif-pic-tow>img{
+    width: 140px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+}  
+
+ @keyframes gif_pic {
+       0 { transform: translateX(0); }
+       
+      100% { transform: translateX(-4200px); }
+   }
