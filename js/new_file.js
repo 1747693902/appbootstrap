@@ -1,27 +1,41 @@
 $(function(){
 	
-	$(".backcolor>button").click(function(){
-		$(this).addClass("buttonBorder")
-
+//	$(".backcolor>button").click(function(){
+//		$(this).addClass("buttonBorder")
+//
+//	})
+//	
+//	$(document).click(function(){
+//		$(".backcolor>button").removeClass("buttonBorder");			
+//		
 //		console.log(222);
-	})
-	
-	$(document).click(function(){
-		$(".backcolor>button").removeClass("buttonBorder");
-//			
-		
-		console.log(222);
-	})
-	
+//	})
+	var i =0;
 	$('.backcolor>button').click(function(){
-		$("#show").animate({"left":0},500);	 
+		i++;
+		if (i%2==0) {
+			$("#show").animate({"left":-200},500);
+			$(".backcolor>button").removeClass("buttonBorder");
+//			$(".backcolor>button>span").removeClass("hidden-span");
+		}
+		
+		else{	
+			$("#show").animate({"left":0},500);
+			$(this).addClass("buttonBorder")
+			$(".backcolor>button").addClass("buttonBorder");
+			console.log()
+//			$(".backcolor>button").firstChild("span").addClass("hidden-span");			
+		}
 		
 	})
-	$('#show').mouseleave(function(){
-		$("#show").animate({"left":-200},500);	 
-		
-	})
-
+	
+	
+//	
+//	$('#show').mouseleave(function(){
+//		$("#show").animate({"left":-200},500);	 
+//		
+//	})
+//
 
 
 
@@ -33,7 +47,7 @@ $(function(){
 * @Last Modified time: 2019-03-12 16:11:11
 */
 
-'use strict';
+//'use strict';
 
 // <!--start 返回顶部-->
 
@@ -57,7 +71,7 @@ $(function(){
         	
             $('html, body').animate({scrollTop: 0},300);
         });
-   });
+   })
 
 
 // <!--end 返回顶部-->
@@ -95,7 +109,7 @@ $(".self-transition-ch").mouseleave(function(){
                 $(".self-img-one").css({"left":"145px","transform": "rotate(0deg)","transition":"2s"});
                               
             }
-        });
+        })
 
 
 //		第二轮
@@ -143,7 +157,7 @@ $(".self-transition-ch").mouseleave(function(){
            	// 大于高度显示
                  $(".self-zhuti").animate({"left":0},1000);    
             }
-        });
+        })
 
 
 
@@ -163,7 +177,7 @@ $(".self-transition-ch").mouseleave(function(){
 //                	"top":"-200px"
                   })
             }
-        });
+        })
 
 
 

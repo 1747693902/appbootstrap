@@ -32,28 +32,32 @@
         <!-- <p>这里写内容区域</p> -->
 <!--开头的上部分导航条-->
 <hearder role="banner">
-	<div class="container">
-		<!--小于960px时顶部出现图片-->			
-			<div class="con">
-				<!--让图片居中-->
-				<a class="visible-sm" href="#">
-		       		<img src="img/fc.png"  width="190px" height="40px">
-		    	</a>
-			</div>
-	</div>
-	<div class="container" id="q">
-		<div class="nav navbar-collapse collapsed" id="w">
-			<ul class=" nav navbar-nav visible-sm fosi" >
-			<li><a href="#">首页</a></li>
-			<li><a href="#">产品</a></li>
-			<li><a href="#">支持</a></li>
-			<li><a href="#">关于</a></li>
-			</ul>
+	<div class="container-fluid navbar-fixed-top" id="xiangxia">		
+		<div class="container">
+			<!--小于960px时顶部出现图片-->			
+				<div class="con">
+					<!--让图片居中-->
+					<a class="visible-sm" href="#">
+			       		<img src="img/fc.png"  width="190px" height="40px">
+			    	</a>
+				</div>
 		</div>
-		
-	</div>
+		<div class="container" id="q">
+			<div class="nav navbar-collapse collapsed" id="w">
+				<ul class=" nav navbar-nav visible-sm fosi" >
+				<li><a href="#">首页</a></li>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">支持</a></li>
+				<li><a href="#">关于</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>	
 	<nav role="navigation" class="navbar" id="nav-fixed">
-		<!--导航条-->		
+		<!--导航条-->	
+<div class="container-fluid" style="" id="long-nav">
+
 		<div class="container" >
 			<!--浏览器时的图片-->
 			<a class="navbar-brand hidden-sm hidden-xs" href="#">
@@ -64,6 +68,7 @@
 					<!--小屏幕时的按钮-->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".">
 						<span class="glyphicon glyphicon-align-justify  whietColor"></span>
+						<sapn class="glyphicon-self glyphicon-remove whietColor hidden-span"></sapn>
 						</button>
 						<span class="fr visible-xs">felink</span>
 				</div>		
@@ -88,7 +93,8 @@
 						<li><a href="#">关于</a></li>
 					</ul>									
 				</div>		   		    			
-		</div>
+		</div>	
+</div>
 	</nav>
 </hearder>
 
